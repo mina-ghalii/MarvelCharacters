@@ -36,7 +36,7 @@ final class CharactersListViewModel: ObservableObject {
     func getCharacters() async {
         incrementPage()
         isLoading = true
-        let result = await dataSource?.getUsers(limit: limit, offset: offset)
+        let result = await dataSource?.getCharacters(limit: limit, offset: offset)
         isLoading = false
         switch result {
         case .success(let data):

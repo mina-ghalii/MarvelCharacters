@@ -9,7 +9,7 @@ import Foundation
 @testable import MarvelCharacters
 final class MockCharactersDataSource: CharacterDataSourceProtocol {
     var succeeded = true
-    func getUsers(limit: Int, offset: Int) async -> Result<CharacterResponse, Error> {
+    func getCharacters(limit: Int, offset: Int) async -> Result<CharacterResponse, Error> {
         if succeeded {
             let mockResult = Mockable().getResourcesMock(fileName: "Characters")
             switch mockResult {

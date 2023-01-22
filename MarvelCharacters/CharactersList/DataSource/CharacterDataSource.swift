@@ -7,11 +7,11 @@
 
 import Foundation
 protocol CharacterDataSourceProtocol {
-    func getUsers(limit: Int, offset: Int) async -> Result<CharacterResponse, Error>
+    func getCharacters(limit: Int, offset: Int) async -> Result<CharacterResponse, Error>
 }
 final class CharacterDataSource: CharacterDataSourceProtocol {
     
-    func getUsers(limit: Int, offset: Int) async -> Result<CharacterResponse, Error> {
+    func getCharacters(limit: Int, offset: Int) async -> Result<CharacterResponse, Error> {
         do {
             let timeStamp = Date().timeIntervalSince1970
             let queryItems = [
