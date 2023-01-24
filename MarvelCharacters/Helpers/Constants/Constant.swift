@@ -7,8 +7,8 @@
 
 import Foundation
 class Constant {
-    static let marvelPublicKey = "" // please fill this
-    static let marvelPrivateKey = "" // please fill this 
+    static let marvelPublicKey = "edf5432d9181ca33665808f18d20f170"
+    static let marvelPrivateKey = "0c0287b891e1c959bbc977e330da70e4d47df411"
     static let baseURL = "http://gateway.marvel.com"
     static let charactersPath = "/v1/public/characters"
     
